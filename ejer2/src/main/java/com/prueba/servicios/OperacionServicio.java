@@ -18,7 +18,6 @@ public class OperacionServicio implements IOperacionServicio{
         Map<String, Object> responseMap = new LinkedHashMap<>();
 
         Operacion operacion = operacionRepository.findOperacionByIdOperacion(idOperacion);
-
         String marca = operacion.getTarjeta().getMarca().getNombre();
         float tasa = operacion.getTarjeta().getMarca().getTasa() / 100.0f;
         float importeInicial = operacion.getMonto();
