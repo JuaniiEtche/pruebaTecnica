@@ -1,0 +1,8 @@
+com\prueba\repositorios\OperacionRepository.class
+com\prueba\modelos\Operacion.class
+com\prueba\Ejer2Application.class
+com\prueba\servicios\OperacionServicio.class
+com\prueba\modelos\Tarjeta.class
+com\prueba\servicios\IOperacionServicio.class
+com\prueba\controladores\OperacionControlador.class
+com\prueba\modelos\Marca.class
