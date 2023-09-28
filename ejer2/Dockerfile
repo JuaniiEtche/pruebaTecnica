@@ -20,7 +20,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copia el artefacto compilado desde el build stage anterior
-COPY --from=build /app/target/proyectoRegistro-0.0.1-SNAPSHOT.war app.jar
+COPY --from=build /app/target/demo-0.0.1-SNAPSHOT.war app.jar
 
 # Define el comando de inicio para ejecutar la aplicación
 ENTRYPOINT ["java", "-jar", "app.jar"]
