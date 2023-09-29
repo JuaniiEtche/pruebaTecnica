@@ -1,0 +1,21 @@
+Le falta un retorno por lo que no compila:
+VERDADERO. La función declarada tiene un tipo de retorno definido como "Return Number," 
+pero no tiene una declaración RETURN explícita que devuelva un valor. Para que la función sea compilada con éxito, 
+debe incluir una declaración RETURN para devolver el valor de L_salary. 
+La corrección podría ser agregar RETURN L_salary; al final del bloque BEGIN.
+
+Se compilará:
+FALSO. Dado que la función tiene un problema de falta de retorno, no se compilará con éxito hasta 
+que se corrija.
+
+Devuelve el valor de P_Emp_Id:
+FALSO. La función no devuelve el valor de P_Emp_Id. Más bien, intenta buscar el salario del 
+empleado cuyo employee_id coincide con P_Emp_Id y almacenar ese salario en la variable L_salary, pero no 
+devuelve ese valor.
+
+Falta la sección de declaración:
+FALSO. La función incluye una sección de declaración en 
+la forma de L_salary Number, por lo que si hay una sección de declaración.
+
+Habrá un error en tiempo de ejecución:
+FALSO. Dado que no compilará por el error mencionado, no llegará a la parte de tiempo de ejecución.
