@@ -19,3 +19,21 @@ la forma de L_salary Number, por lo que si hay una sección de declaración.
 
 Habrá un error en tiempo de ejecución:
 FALSO. Dado que no compilará por el error mencionado, no llegará a la parte de tiempo de ejecución.
+
+
+Descripcion del código:
+
+
+-- Declaración de una función llamada Get_salary que toma un parámetro P_Emp_id de tipo Number
+Create or Replace function Get_salary(P_Emp_id Number) Return Number As
+  -- Declaración de una variable local llamada L_salary de tipo Number
+  L_salary Number;
+Begin
+  -- Selecciona el salario (Salary) de la tabla Employees
+  -- donde el campo employee_id coincide con el valor de P_Emp_Id
+  -- para finalmente guardarlo en la variable L_salary.
+  Select Salary into L_salary from Employees where employee_id = P_Emp_Id;
+
+  -- Fin de la función Get_salary
+  -- Nota: Falta "RETURN L_salary;"para devolver el valor buscado.
+End Get_salary;
